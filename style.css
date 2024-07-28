@@ -1,0 +1,108 @@
+/* @font-face {
+    font-family: DaysOne Regular;
+    src: url(http://pc-boutique.local/wp-content/themes/pc_boutique/asstes/fonts/DaysOne-Regular.ttf);
+    font-weight: normal;
+} */
+
+html {
+    font-family: "Days One", sans-serif;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+nav,
+footer {
+    width: 87.5%;
+}
+nav {
+    margin: 26px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 44px;
+    height: auto;
+}
+
+#logo_group span {
+    font-size: 16.5pt;
+    margin: auto 0;
+}
+
+#logo_group {
+    display: flex;
+    justify-content: space-between;
+    width: 234px;
+    align-items: center;
+}
+
+#logo_group span,
+footer span {
+    font-weight: 400 !important;
+}
+
+nav button,
+footer span {
+    font-size: 13.5pt;
+}
+
+#buttons_group {
+    width: 341px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    text-align: center;
+    padding: 12px 24px 12px 24px;
+    border-radius: 16px;
+    line-height: 32px;
+}
+
+#btn_contact {
+    border: 2px solid #272727;
+    max-width: 161px;
+}
+
+#btn_shop {
+    background-color: #194def;
+    color: #fff;
+    display: flex;
+    gap: 10px;
+    max-width: 168px;
+}
+
+#icon_shop {
+    width: 24px;
+    height: auto;
+}
+
+footer {
+    padding: 44px 40px 44px 40px;
+    height: 124px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e2e5f1;
+    border-radius: 24px;
+    margin: 0 auto;
+}
