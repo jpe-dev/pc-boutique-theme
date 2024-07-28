@@ -18,7 +18,7 @@
 			<span>PC-BOUTIQUE</span>
 		</div>
 		<div id="buttons_group" class="inter">
-			<span id="btn_contact" class="button"><a href="/contact">CONTACTEZ</a></span>
-			<span id="btn_shop" class="button"><img id="icon_shop" src="<?php echo THEME_IMG_PATH; ?>/white_shop.svg" alt=""><a href="/boutique">ACHETEZ</a></span>
+			<a href="/contact"><span id="btn_contact" class="button">CONTACTEZ</span></a>
+			<a href="/boutique"><span id="btn_shop" class="button"><img id="icon_shop" src="<?php echo THEME_IMG_PATH; ?>/white_shop.svg" alt="">ACHETEZ</span></a>
 		</div>
 	</nav>
