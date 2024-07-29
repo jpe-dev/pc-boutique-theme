@@ -115,7 +115,7 @@ main {
 
 #main_title {
     text-align: end;
-    max-width : 756px;
+    max-width: 756px;
 }
 
 #main_title h1 {
@@ -126,7 +126,7 @@ main {
 #main_sub_title {
     display: flex;
     justify-content: space-between;
-    color: #1D51F5;
+    color: #1d51f5;
 }
 
 #processor {
@@ -154,13 +154,16 @@ main {
 #main_left_banner {
     width: 47.14%;
     padding: 60px;
-    background-color: #2C2C2C;
+    background-color: #272727;
+    background-image: linear-gradient(
+        90deg,
+        rgba(127, 127, 127, 0.2) 20%,
+        rgba(47, 47, 47, 0.2) 100%
+    );
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-#main_left_banner {
+    height: 390px;
     color: #fff;
 }
 
@@ -171,4 +174,54 @@ main {
 #visit_shop_group {
     display: flex;
     justify-content: space-between;
+}
+
+#visit_group_headline {
+    display: flex;
+    align-items: center;
+    width: 307px;
+    gap: 10px;
+}
+
+#shop_rounded {
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visit_group_headline p {
+    width: 219px;
+    line-height: 36px;
+    font-size: 18pt;
+}
+
+#main_button_greyed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 48px;
+    padding: 16px 34px 16px 34px;
+    background-color: #373737;
+    transition: background-color 0.75s ease-out 100ms;
+}
+
+#main_button_greyed:hover {
+    background-color: #fff;
+}
+#main_button_greyed:hover #svg_chevron_right {
+    fill: #272727;
+}
+#white_chevron_right {
+    width: 6.55px;
+    height: 11.15px;
+}
+
+#svg_chevron_right {
+    transition: fill 0.75s ease-out 100ms;
 }
