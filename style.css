@@ -25,6 +25,7 @@ footer,
 main {
     width: 87.5%;
 }
+
 nav {
     margin: 26px auto;
     display: flex;
@@ -104,47 +105,70 @@ footer {
 
 main {
     margin-top: 52px;
-    width: 87.5%;
+    max-width: 87.5%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
 }
 
-#main-title {
-    font-size: 21pt;
+#main_title {
     text-align: end;
-    width : 573px;
-    margin: 0 auto;
+    max-width : 756px;
 }
 
-#main-title h1 {
+#main_title h1 {
+    font-size: 55.5pt;
     margin: 0;
 }
 
-#main-sub-title {
+#main_sub_title {
     display: flex;
     justify-content: space-between;
     color: #1D51F5;
 }
 
 #processor {
-    max-width: 75px;
-    max-height: 66px;
+    max-width: 115px;
+    max-height: 103px;
 }
 
 #banners {
     display: flex;
     justify-content: space-between;
+    width: 1400px;
 }
 
 .banner {
-    width: 49.28%;
     border-radius: 24px;
 }
 
-#main-left-banner {
-    padding: 4.5%;
-    background-color: #2C2C2C;
+.banner p {
+    font-size: 13.5pt;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
 }
 
-#main-left-banner p {
+#main_left_banner {
+    width: 47.14%;
+    padding: 60px;
+    background-color: #2C2C2C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main_left_banner p {
     color: #fff;
+}
+
+#main_right_banner {
+    width: 49.28%;
+}
+
+#visit_shop_group {
+    display: flex;
+    justify-content: space-between;
 }
