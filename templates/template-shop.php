@@ -9,6 +9,8 @@
 
 <?php get_header(); ?>
 
-<?php the_content() ?>
+<main>
+    <h1>BOUTIQUE</h1>
+</main>
 
 <?php get_footer(); ?>
