@@ -19,6 +19,6 @@
 		</div>
 		<div id="buttons_group" class="inter">
 			<a href="/contact"><span id="btn_contact" class="button">CONTACTEZ</span></a>
-			<a href="/boutique"><span id="btn_shop" class="button"><img id="icon_shop" src="<?php echo THEME_IMG_PATH; ?>/white_shop.svg" alt="">ACHETEZ</span></a>
+			<a href="/boutique"><span id="btn_shop" class="button"><img class="icon_shop" src="<?php echo THEME_IMG_PATH; ?>/white_shop.svg" alt="">ACHETEZ</span></a>
 		</div>
 	</nav>

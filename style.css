@@ -71,7 +71,6 @@ footer span {
     text-align: center;
     padding: 12px 24px 12px 24px;
     border-radius: 16px;
-    line-height: 32px;
 }
 
 #btn_contact {
@@ -85,11 +84,12 @@ footer span {
     display: flex;
     gap: 10px;
     max-width: 168px;
+    align-items: center;
 }
 
-#icon_shop {
-    width: 24px;
-    height: auto;
+.icon_shop {
+    width: 18px;
+    height: 21px;
 }
 
 footer {
@@ -160,7 +160,7 @@ main {
     justify-content: space-between;
 }
 
-#main_left_banner p {
+#main_left_banner {
     color: #fff;
 }
 
