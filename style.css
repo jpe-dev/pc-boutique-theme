@@ -92,13 +92,17 @@ footer span {
     height: 21px;
 }
 
+footer,
+#main_right_banner {
+    background-color: #e2e5f1;
+}
+
 footer {
     padding: 44px 40px 44px 40px;
     height: 36px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e2e5f1;
     border-radius: 24px;
     margin: 0 auto;
 }
@@ -136,7 +140,7 @@ main {
 
 #banners {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     width: 1400px;
 }
 
@@ -152,7 +156,7 @@ main {
 }
 
 #main_left_banner {
-    width: 47.14%;
+    width: 540px;
     padding: 60px;
     background-color: #272727;
     background-image: linear-gradient(
@@ -163,12 +167,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 324px;
+    height: 390px;
     color: #fff;
-}
-
-#main_right_banner {
-    width: 49.28%;
 }
 
 #visit_shop_group {
@@ -224,4 +224,106 @@ main {
 
 #svg_chevron_right {
     transition: fill 0.75s ease-out 100ms;
+}
+
+#main_right_banner {
+    width: 642px;
+    height: 462px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#banner_pc {
+    width: 440px;
+    height: 473px;
+    position: absolute;
+    top: 37px;
+    left: 200px;
+}
+
+.banner_star {
+    width: 22px;
+    height: 22px;
+}
+
+#rating .inter {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#rating_average {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 81.47px;
+    color: #272727;
+}
+
+#reviews {
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    padding: 32px;
+    width: 302px;
+    height: 84px;
+    border-radius: 24px;
+    background-color: #fff;
+}
+
+#reviews_number {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #272727;
+}
+
+#satisfied_customers_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+
+#reviews_number_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#reviews_link {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    align-items: center;
+}
+
+#reviews_link p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #194def;
+}
+
+#reviews_link_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 125px;
+    padding: 0;
+}
+
+#reviews_link_chevron #svg_chevron_right {
+    fill: #194def;
+}
+
+#reviews_link_chevron {
+    width: 24px;
+    height: 24px;
+    border-radius: 48px;
+    border: 2px solid #194def;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

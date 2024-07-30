@@ -27,11 +27,39 @@
 					<p>VISITEZ NOTRE<br />
 						BOUTIQUE</p>
 				</div>
-				<a href="/boutique"><span id="main_button_greyed"><?php echo file_get_contents(THEME_IMG_PATH."/white_chevron_right.svg") ?>
+				<a href="/boutique"><span id="main_button_greyed"><?php echo file_get_contents(THEME_IMG_PATH . "/white_chevron_right.svg") ?>
 					</span></a>
 			</div>
 		</div>
-		<div class="banner" id="main_right_banner"></div>
+		<div class="banner" id="main_right_banner">
+			<div id="rating">
+				<p class="inter">TAUX DE</p>
+				<span>
+					<img class="banner_star" src="<?php echo THEME_IMG_PATH; ?>/Star.svg" alt="">
+					<img class="banner_star" src="<?php echo THEME_IMG_PATH; ?>/Star.svg" alt="">
+					<img class="banner_star" src="<?php echo THEME_IMG_PATH; ?>/Star.svg" alt="">
+					<img class="banner_star" src="<?php echo THEME_IMG_PATH; ?>/Star.svg" alt="">
+					<img class="banner_star" src="<?php echo THEME_IMG_PATH; ?>/Star.svg" alt="">
+				</span>
+				<p id="rating_average">5,0</p>
+			</div>
+			<img id="banner_pc" src="<?php echo THEME_IMG_PATH; ?>/banner-pc.png" alt="">
+			<div id="reviews">
+				<div id="reviews_number_div">
+					<p id="reviews_number">350+</p>
+					<p class="inter" id="satisfied_customers_text">clients<br>satisfaits</p>
+				</div>
+				<div id="reviews_link_div">
+					<span id="reviews_images">
+
+					</span>
+					<span id="reviews_link" class="inter">
+						<p>LES AVIS</p>
+						<a href="/reviews"><span id="reviews_link_chevron"><?php echo file_get_contents(THEME_IMG_PATH . "/white_chevron_right.svg") ?></span></a>
+					</span>
+				</div>
+			</div>
+		</div>
 
 	</div>
 </main>
