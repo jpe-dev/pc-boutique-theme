@@ -327,3 +327,67 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+#services {
+    width: 1265px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+#services h2 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 81.47px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+#service_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 333px;
+    width: 335px;
+}
+
+.service h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.service p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.service h3, .service p {
+    margin: 0;
+}
+
+#service_computer {
+    width: 110.77px;
+    height: 120px;
+}
+
+#service_power {
+    width: 171px;
+    height: 120px;
+}
+
+#service_gear {
+    width: 120px;
+    height: 120px;
+}

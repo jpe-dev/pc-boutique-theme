@@ -64,4 +64,25 @@
 	</div>
 </main>
 
+<section id="services">
+	<h2>NOS OFFRES PRINCIPALES</h2>
+	<div id="service_container">
+		<div class="service">
+			<img id="service_computer" src="<?php echo THEME_IMG_PATH; ?>/service_computer.png" alt="">
+			<h3>Vente de produits informatiques</h3>
+			<p class="inter">Explorez notre large gamme de PC portables, PC fixes gaming et PC de bureau pour la bureautique.</p>
+		</div>
+		<div class="service">
+			<img id="service_power" src="<?php echo THEME_IMG_PATH; ?>/service_power.png" alt="">
+			<h3>Services de montage</h3>
+			<p class="inter">Confiez-nous le montage de votre PC pour une performance optimale.</p>
+		</div>
+		<div class="service">
+			<img id="service_gear" src="<?php echo THEME_IMG_PATH; ?>/service_gear.png" alt="">
+			<h3>Nettoyage et réparation de PC</h3>
+			<p class="inter">Gardez vos équipements en parfait état grâce à nos services de nettoyage et de réparation.</p>
+		</div>
+	</div>
+</section>
+
 <?php get_footer(); ?>
