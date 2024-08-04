@@ -85,4 +85,16 @@
 	</div>
 </section>
 
+<section id="services_links">
+	<div>
+		<h2>Réservez votre service de montage dès aujourd'hui</h2>
+		<a href="/contact"><span class="inter">Réservez</span></a>
+	</div>
+	<img id="services_links_computer" src="<?php echo THEME_IMG_PATH; ?>/3d_computer.png" alt="">
+	<div>
+		<h2>Découvrez nos derniers PC gaming</h2>
+		<a href="/boutique"><span class="inter">Explorez</span></a>
+	</div>
+</section>
+
 <?php get_footer(); ?>
