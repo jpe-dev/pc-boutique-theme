@@ -468,6 +468,12 @@ main {
     display: flex;
     align-items: center;
     gap: 24px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.contact_info p {
+    margin: 0;
 }
 
 #call_icon {
@@ -487,4 +493,11 @@ main {
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
+}
+
+#map {
+    margin-left: 120px;
+    width: 690px;
+    height: 389px;
+    margin-top: 29px;
 }

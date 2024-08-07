@@ -25,4 +25,5 @@
 	</div>
 </article>
 
+<img id="map" src="<?php echo THEME_IMG_PATH; ?>/map.png" alt="">
 <?php get_footer(); ?>
