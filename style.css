@@ -105,6 +105,7 @@ footer {
     align-items: center;
     border-radius: 24px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 main {
@@ -174,6 +175,7 @@ main {
 #visit_shop_group {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #visit_group_headline {
@@ -409,7 +411,6 @@ main {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
 
 #services_links h2 {
