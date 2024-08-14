@@ -452,9 +452,20 @@ main {
     text-decoration: none;
 }
 
+#main_contact {
+    display: flex;
+    width: 87.5%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left {
+    width: 49.28%;
+}
+
 #contact_container {
     width: 520px;
-    margin-left: 120px;
 }
 
 #contact_container h1 {
@@ -497,8 +508,34 @@ main {
 }
 
 #map {
-    margin-left: 120px;
-    width: 690px;
-    height: 389px;
-    margin-top: 29px;
+    width: 100%;
+    height: auto;
 }
+
+#contact_form_container {
+    width: 49.28%;
+    height: 667px;
+    border-radius: 24px;
+    background-color: #272727;
+    background-image: linear-gradient(
+        90deg,
+        rgba(127, 127, 127, 0.2) 20%,
+        rgba(47, 47, 47, 0.2) 100%
+    );
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 45px;
+}
+
+#contact_form_container p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #808080;
+}
+
+input {
+    all: unset;
+  }
