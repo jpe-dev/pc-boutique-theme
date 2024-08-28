@@ -31,12 +31,7 @@
 	</div>
 	<article id="contact_form_container">
 		<p class="inter">Nous sommes à votre disposition pour répondre à toutes vos questions et demandes. Remplissez le formulaire ci-dessous ou utilisez les coordonnées fournies pour nous contacter directement.</p>
-		<div id="contact_form">
-			<input type="text" name="name" id="f_name" placeholder="nom*">
-			<input type="text" name="email" id="f_email" placeholder="email*">
-			<input type="text" name="phone" id="f_phone" placeholder="téléphone*">
-			<input type="text" name="message" id="f_messgae" placeholder="message*">
-		</div>
+		<?php echo do_shortcode("[wpforms id=\"19\"]") ?>		
 	</article>
 </main>
 

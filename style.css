@@ -3,7 +3,7 @@ html {
 }
 
 .inter {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -534,8 +534,65 @@ main {
     font-size: 18px;
     line-height: 36px;
     color: #808080;
+    margin: 0;
 }
 
-input {
+input,
+.f_submit {
     all: unset;
-  }
+}
+
+.wp_contact_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height: 527px;
+}
+.f_name,
+.f_email,
+.f_phone,
+.f_message {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.wp_contact_form input,
+.wp_contact_form input::placeholder {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.wp_contact_form input::placeholder {
+    color: #808080;
+}
+
+.wp_contact_form input {
+    height: 36px;
+    margin-bottom: 40px !important;
+}
+
+.f_message {
+    height: 72px;
+}
+
+.f_submit {
+    text-transform: uppercase;
+    padding: 12px 32px 12px 32px;
+    margin-right: 0;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    color: #fff;
+    height: 56px;
+    width: 160px;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
