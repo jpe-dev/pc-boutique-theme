@@ -31,7 +31,7 @@
 	</div>
 	<article id="contact_form_container">
 		<p class="inter">Nous sommes à votre disposition pour répondre à toutes vos questions et demandes. Remplissez le formulaire ci-dessous ou utilisez les coordonnées fournies pour nous contacter directement.</p>
-		<?php echo do_shortcode("[wpforms id=\"19\"]") ?>		
+		<?php the_content(); ?>		
 	</article>
 </main>
 

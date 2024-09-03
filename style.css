@@ -1,3 +1,8 @@
+:root {
+    --full-width: 100%;
+    --container-width: 87.5%;
+}
+
 html {
     font-family: "Days One", sans-serif;
 }
@@ -11,8 +16,8 @@ html {
 }
 
 body {
-    width: 100%;
-    max-width: 100%;
+    width: var(--full-width);
+    max-width: var(--full-width);
 }
 
 nav a {
@@ -23,7 +28,7 @@ nav a {
 nav,
 footer,
 main {
-    width: 87.5%;
+    width: var(--container-width);
 }
 
 nav {
@@ -110,7 +115,7 @@ footer {
 
 main {
     margin-top: 52px;
-    max-width: 87.5%;
+    max-width: var(--container-width);
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -163,7 +168,7 @@ main {
     background-image: linear-gradient(
         90deg,
         rgba(127, 127, 127, 0.2) 20%,
-        rgba(47, 47, 47, 0.2) 100%
+        rgba(47, 47, 47, 0.2) var(--full-width)
     );
     display: flex;
     flex-direction: column;
@@ -346,7 +351,7 @@ main {
     line-height: 81.47px;
     margin-top: 0;
     margin-bottom: 80px;
-    width: 100%;
+    width: var(--full-width);
     text-align: center;
 }
 
@@ -406,7 +411,7 @@ main {
     background-image: linear-gradient(
         90deg,
         rgba(127, 127, 127, 0.2) 20%,
-        rgba(47, 47, 51, 0.2) 100%
+        rgba(47, 47, 51, 0.2) var(--full-width)
     );
     margin: 0 auto;
     display: flex;
@@ -454,7 +459,7 @@ main {
 
 #main_contact {
     display: flex;
-    width: 87.5%;
+    width: var(--container-width);
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
@@ -508,7 +513,7 @@ main {
 }
 
 #map {
-    width: 100%;
+    width: var(--full-width);
     height: auto;
 }
 
@@ -520,7 +525,7 @@ main {
     background-image: linear-gradient(
         90deg,
         rgba(127, 127, 127, 0.2) 20%,
-        rgba(47, 47, 47, 0.2) 100%
+        rgba(47, 47, 47, 0.2) var(--full-width)
     );
     padding: 60px;
     display: flex;
@@ -571,11 +576,11 @@ input,
 
 .wp_contact_form input {
     height: 36px;
-    margin-bottom: 40px !important;
+    margin-top: 30px !important;
 }
 
 .f_message {
-    height: 72px;
+    height: 100px !important;
 }
 
 .f_submit {
