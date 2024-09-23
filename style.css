@@ -1,6 +1,37 @@
+/*
+Theme Name: PC Boutique
+Theme URI: https://wordpress.org/themes
+Author: Perret Jérémie
+Author URI: https://wordpress.org/
+Description: Theme for the pc-boutique.net website
+Tags: custom-background
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pc_boutique
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 :root {
+    --color-white: #fff;
+    --color-white-darker: #e2e5f1;
+    --color-blue: #194def;
     --full-width: 100%;
     --container-width: 87.5%;
+    --font-weight-large: 700;
+    --font-weight-normal: 400;
+    --button-border-radius-normal: 16px;
+    --p-font-size-normal: 13.5pt;
+    --border-size-normal: 2px;
+    --gap-normal: 10px;
+    --gap-big: 60px;
+    --icon-width-normal: 18px;
+    --margin-top-normal: 50px;
+    --margin-horizontal-center: 0 auto;
 }
 
 html {
@@ -10,7 +41,7 @@ html {
 .inter {
     font-family: "Inter", sans-serif !important;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: var(--font-weight-large);
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
@@ -56,12 +87,12 @@ nav img {
 
 #logo_group span,
 footer span {
-    font-weight: 400 !important;
+    font-weight: var(--font-weight-normal) !important;
 }
 
 nav button,
 footer span {
-    font-size: 13.5pt;
+    font-size: var(--p-font-size-normal);
 }
 
 #buttons_group {
@@ -75,52 +106,52 @@ footer span {
 .button {
     text-align: center;
     padding: 12px 24px 12px 24px;
-    border-radius: 16px;
+    border-radius: var(--button-border-radius-normal);
 }
 
 #btn_contact {
-    border: 2px solid #272727;
+    border: var(--border-size-normal) solid #272727;
     max-width: 161px;
 }
 
 #btn_shop {
-    background-color: #194def;
-    color: #fff;
+    background-color: var(--color-blue);
+    color: var(--color-white);
     display: flex;
-    gap: 10px;
+    gap: var(--gap-normal);
     max-width: 168px;
     align-items: center;
 }
 
 .icon_shop {
-    width: 18px;
+    width: var(--icon-width-normal);
     height: 21px;
 }
 
 footer,
 #main_right_banner {
-    background-color: #e2e5f1;
+    background-color: var(--color-white-darker);
 }
 
 footer {
     padding: 44px 40px 44px 40px;
-    height: 36px;
+    height: 2.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 24px;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: var(--margin-horizontal-center);
+    margin-top: var(--margin-top-normal);
 }
 
 main {
-    margin-top: 52px;
+    margin-top: var(--margin-top-normal);
     max-width: var(--container-width);
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: var(--gap-big);
 }
 
 #main_title {
@@ -155,9 +186,9 @@ main {
 }
 
 .banner p {
-    font-size: 13.5pt;
-    font-weight: 400;
-    line-height: 36px;
+    font-size: var(--p-font-size-normal);
+    font-weight: var(--font-weight-normal);
+    line-height: 2.25rem;
     margin: 0;
 }
 
@@ -174,7 +205,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     height: 390px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 #visit_shop_group {
@@ -187,14 +218,14 @@ main {
     display: flex;
     align-items: center;
     width: 307px;
-    gap: 10px;
+    gap: var(--gap-normal);
 }
 
 #shop_rounded {
     width: 48px;
     height: 48px;
     border-radius: 50px;
-    border: 2px solid #fff;
+    border: var(--border-size-normal) solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,7 +233,7 @@ main {
 
 #visit_group_headline p {
     width: 219px;
-    line-height: 36px;
+    line-height: 2.25rem;
     font-size: 18pt;
 }
 
@@ -219,7 +250,7 @@ main {
 }
 
 #main_button_greyed:hover {
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 #main_button_greyed:hover #svg_chevron_right {
     fill: #272727;
@@ -258,13 +289,13 @@ main {
 }
 
 #rating .inter {
-    font-weight: 700;
+    font-weight: var(--font-weight-large);
     font-size: 18px;
     line-height: 32px;
 }
 
 #rating_average {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 64px;
     line-height: 81.47px;
     color: #272727;
@@ -278,18 +309,18 @@ main {
     width: 302px;
     height: 84px;
     border-radius: 24px;
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 
 #reviews_number {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 24px;
-    line-height: 36px;
+    line-height: 2.25rem;
     color: #272727;
 }
 
 #satisfied_customers_text {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 16px;
     line-height: 19.36px;
 }
@@ -308,9 +339,9 @@ main {
 }
 
 #reviews_link p {
-    font-weight: 700;
+    font-weight: var(--font-weight-large);
     font-size: 18px;
-    color: #194def;
+    color: var(--color-blue);
 }
 
 #reviews_link_div {
@@ -322,14 +353,14 @@ main {
 }
 
 #reviews_link_chevron #svg_chevron_right {
-    fill: #194def;
+    fill: var(--color-blue);
 }
 
 #reviews_link_chevron {
     width: 24px;
     height: 24px;
     border-radius: 48px;
-    border: 2px solid #194def;
+    border: var(--border-size-normal) solid var(--color-blue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,7 +368,7 @@ main {
 
 #services {
     width: 1265px;
-    margin: 0 auto;
+    margin: var(--margin-horizontal-center);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -346,7 +377,7 @@ main {
 }
 
 #services h2 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 64px;
     line-height: 81.47px;
     margin-top: 0;
@@ -369,16 +400,16 @@ main {
 }
 
 .service h3 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 24px;
-    line-height: 36px;
+    line-height: 2.25rem;
     text-transform: uppercase;
 }
 
 .service p {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2.25rem;
 }
 
 .service h3,
@@ -402,7 +433,7 @@ main {
 }
 
 #services_links {
-    width: 1400px;
+    width: 72.9%;
     height: 272px;
     padding: 98px;
     border-radius: 24px;
@@ -413,16 +444,16 @@ main {
         rgba(127, 127, 127, 0.2) 20%,
         rgba(47, 47, 51, 0.2) var(--full-width)
     );
-    margin: 0 auto;
+    margin: var(--margin-horizontal-center);
     display: flex;
     justify-content: space-between;
 }
 
 #services_links h2 {
-    font-weight: 400;
-    font-size: 36px;
+    font-weight: var(--font-weight-normal);
+    font-size: 2.25rem;
     line-height: 45.83px;
-    color: #fff;
+    color: var(--color-white);
     text-transform: uppercase;
 }
 
@@ -445,9 +476,9 @@ main {
     width: 182px;
     height: 32px;
     padding: 12px 44px 12px 44px;
-    border-radius: 16px;
-    color: #fff;
-    font-weight: 700;
+    border-radius: var(--button-border-radius-normal);
+    color: var(--color-white);
+    font-weight: var(--font-weight-large);
     font-size: 18px;
     line-height: 32px;
     text-transform: uppercase;
@@ -460,7 +491,7 @@ main {
 #main_contact {
     display: flex;
     width: var(--container-width);
-    margin: 0 auto;
+    margin: var(--margin-horizontal-center);
     flex-direction: row;
     justify-content: space-between;
 }
@@ -474,7 +505,7 @@ main {
 }
 
 #contact_container h1 {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 64px;
     line-height: 81.47px;
     margin-top: 45px;
@@ -494,7 +525,7 @@ main {
 }
 
 #call_icon {
-    width: 18px;
+    width: var(--icon-width-normal);
     height: 18px;
 }
 
@@ -507,9 +538,9 @@ main {
 }
 
 .contact_info p {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 24px;
-    line-height: 36px;
+    line-height: 2.25rem;
 }
 
 #map {
@@ -535,9 +566,9 @@ main {
 }
 
 #contact_form_container p {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2.25rem;
     color: #808080;
     margin: 0;
 }
@@ -550,7 +581,7 @@ input,
 .wp_contact_form form {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: var(--gap-big);
     height: 527px;
 }
 .f_name,
@@ -558,16 +589,16 @@ input,
 .f_phone,
 .f_message {
     border-bottom: 2px solid #fff;
-    color: #fff;
+    color: var(--color-white);
     text-transform: uppercase;
     padding: 12px;
 }
 
 .wp_contact_form input,
 .wp_contact_form input::placeholder {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
     font-size: 24px;
-    line-height: 36px;
+    line-height: 2.25rem;
 }
 
 .wp_contact_form input::placeholder {
@@ -575,7 +606,7 @@ input,
 }
 
 .wp_contact_form input {
-    height: 36px;
+    height: 2.25rem;
     margin-top: 30px !important;
 }
 
@@ -587,12 +618,12 @@ input,
     text-transform: uppercase;
     padding: 12px 32px 12px 32px;
     margin-right: 0;
-    border: 2px solid #fff;
-    border-radius: 16px;
-    color: #fff;
+    border: var(--border-size-normal) solid #fff;
+    border-radius: var(--button-border-radius-normal);
+    color: var(--color-white);
     height: 56px;
     width: 160px;
-    font-weight: 700;
+    font-weight: var(--font-weight-large);
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -600,4 +631,78 @@ input,
     margin-left: auto;
     margin-top: 32px;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1600px) and (orientation: landscape) {
+    #services_links h2 {
+        font-size: 1.75rem;
+    }
+
+    #services {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1536px) and (orientation: landscape) {
+    #services_links h2 {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 1440px) and (orientation: landscape) {
+    #services_links h2 {
+        font-size: 1.4rem;
+    }
+
+    .f_submit {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 1366px) and (orientation: landscape) {
+    #banners {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #main_left_banner {
+        width: 38.57%;
+    }
+
+    #main_right_banner {
+        width: 49.28%;
+    }
+
+    #services_links h2 {
+        font-size: 1.2rem;
+        line-height: 35px;
+    }
+
+    #services_links span {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+    .service h3 {
+        font-size: 21px;
+    }
+
+    .service p {
+        font-size: 17px;
+    }
+
+    #services_links h2 {
+        font-size: 1.1rem;
+        line-height: 35px;
+    }
+
+    .wp_contact_form form {
+        gap: 40px;
+    }
+
+    .f_submit {
+        margin-top: 0;
+    }
 }
