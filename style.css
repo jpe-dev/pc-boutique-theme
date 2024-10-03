@@ -38,17 +38,17 @@ html {
     font-family: "Days One", sans-serif;
 }
 
+html,
+body {
+    margin: 0 !important;
+}
+
 .inter {
     font-family: "Inter", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: var(--font-weight-large);
     font-style: normal;
     font-variation-settings: "slnt" 0;
-}
-
-body {
-    width: var(--full-width);
-    max-width: var(--full-width);
 }
 
 nav a {
@@ -396,7 +396,7 @@ main {
     flex-direction: column;
     gap: 32px;
     height: 333px;
-    width: 335px;
+    width: 32%;
 }
 
 .service h3 {
@@ -434,8 +434,7 @@ main {
 
 #services_links {
     width: 72.9%;
-    height: 272px;
-    padding: 98px;
+    height: 468px;
     border-radius: 24px;
     position: relative;
     background-color: #3c3c3c;
@@ -446,7 +445,9 @@ main {
     );
     margin: var(--margin-horizontal-center);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 98px 0 98px;
 }
 
 #services_links h2 {
@@ -458,8 +459,7 @@ main {
 }
 
 #services_links div {
-    width: 388px;
-    height: 272px;
+    width: 27.97%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -467,8 +467,7 @@ main {
 
 #services_links_computer {
     width: auto;
-    height: 422px;
-    margin-top: -38px;
+    height: 100%;
 }
 
 #services_links span {
@@ -635,7 +634,7 @@ input,
 
 /* Computer sizes */
 
-@media screen and (max-width: 1600px) and (orientation: landscape) {
+@media screen and (max-width: 1600px) {
     #services_links h2 {
         font-size: 1.75rem;
     }
@@ -645,14 +644,14 @@ input,
     }
 }
 
-@media screen and (max-width: 1536px) and (orientation: landscape) {
+@media screen and (max-width: 1536px) {
     #services_links h2 {
         font-size: 1.5rem;
         line-height: 40px;
     }
 }
 
-@media screen and (max-width: 1440px) and (orientation: landscape) {
+@media screen and (max-width: 1440px) {
     #services_links h2 {
         font-size: 1.4rem;
     }
@@ -662,7 +661,7 @@ input,
     }
 }
 
-@media screen and (max-width: 1366px) and (orientation: landscape) {
+@media screen and (max-width: 1366px) {
     #banners {
         width: 100%;
         justify-content: space-between;
@@ -676,6 +675,10 @@ input,
         width: 49.28%;
     }
 
+    #services_links {
+        height: 350px;
+    }
+
     #services_links h2 {
         font-size: 1.2rem;
         line-height: 35px;
@@ -686,7 +689,7 @@ input,
     }
 }
 
-@media screen and (max-width: 1280px) and (orientation: landscape) {
+@media screen and (max-width: 1280px) {
     .service h3 {
         font-size: 21px;
     }
@@ -710,7 +713,7 @@ input,
 }
 
 /* Tablet sizes */
-@media screen and (max-width: 1180px) and (orientation: landscape) {
+@media screen and (max-width: 1180px) {
     .wp_contact_form form {
         gap: 20px;
     }
@@ -719,11 +722,7 @@ input,
         height: 90px;
     }
 }
-@media screen and (max-width: 1080px) and (orientation: landscape) {
-    #services_links_computer {
-        height: 350px;
-    }
-
+@media screen and (max-width: 1080px) {
     #contact_form_container {
         padding: 32px;
         gap: 16px;
@@ -732,5 +731,120 @@ input,
     .wp_contact_form input,
     .wp_contact_form input::placeholder {
         font-size: 22px;
+    }
+
+    #services_links {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    :root {
+        --container-width: 90%;
+    }
+    body {
+        margin: 0;
+    }
+    main {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    #logo_group span {
+        font-size: 18px;
+    }
+
+    #logo_group {
+        width: 200px;
+    }
+
+    #buttons_group {
+        width: auto;
+        gap: 15px;
+    }
+
+    #main_title h1 {
+        font-size: 30pt;
+    }
+
+    #processor {
+        max-width: 57.5px;
+        max-height: 51.5px;
+    }
+
+    #banners {
+        flex-direction: column;
+    }
+
+    #main_left_banner {
+        width: 90%;
+        padding: 30px;
+    }
+
+    #main_right_banner {
+        width: 92%;
+    }
+
+    #services_links {
+        flex-direction: column;
+        height: 300px;
+        padding: 0;
+        width: 90%;
+    }
+
+    #services_links_computer {
+        display: none;
+    }
+
+    #services_links div {
+        width: 90%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #service_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .service {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #main_contact {
+        flex-direction: column;
+    }
+
+    #left,
+    #contact_form_container,
+    #contact_container {
+        width: 100%;
+    }
+
+    #leftm,
+    #contact_container {
+        align-items: center;
+        justify-content: center;
+    }
+    #contact_container h1 {
+        text-align: center;
+    }
+    .contact_info {
+        justify-content: center;
+    }
+
+    .contact_info p br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        padding: 20px;
     }
 }
